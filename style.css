@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, legend, .header h1, button {
+    font-family: 'Staatliches', cursive;
+  }
+  
+  h1, p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  h1 { 
+    font-size: 36px;
+    height: 45px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+  }
+  
+  .page {
+    max-width: 750px;
+    margin: auto;
+    margin-bottom: 366px;
+  }
+  
+  header img {
+    width: 225px;
+    height: 100px;
+    flex-shrink: 0;
+    margin-top: 20px;
+    margin-bottom: 32px;
+  }
+  
+  body {
+    background: #BFD7E4;
+    font-family: 'Poppins', sans-serif;
+    color: #4E4958;
+  }
+  
+  body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #293241;
+  }
+  
+  form {
+    background: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 64px 64px;
+  }
+  
+  .header {
+    height: 135px;
+    background: #F67669;
+    border-radius: 20px 20px 0 0;
+    padding: 50px 275px;
+  }
+  
+  .header h1 {
+    width: 200px;
+    height: 33px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select, textarea {
+    border-radius: 8px;
+    background: var(--shapes-02, #FAFAFC);
+    border: 1px solid var(--back-lines-in-white, #E6E6F0);
+    height: 56px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: #6c6a71;
+  }
+  
+  .input-wrapper textarea {
+    padding: 8px 24px;
+    height: 168px;
+  }
+  
+  .input-wrapper select {
+    appearance: none;
+    width: 50%;
+  }
+  
+  span {
+    color: #C1BCCC;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  
+  span:hover {
+    color: #868586;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  
+  .input-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  
+  legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    border-bottom: 1px solid #E6E6F0;
+    padding-bottom: 8px;
+    margin-bottom: 31px;
+  }
+  
+  .checkbox-wrapper {
+    position: relative;
+    margin-top: 30px;
+  }
+  
+  .checkbox-wrapper label {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+  }
+  
+  .checkbox-wrapper input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+  }
+  
+  .checkbox-wrapper label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: block;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+  }
+  
+  .checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.00016 16.1698L4.83016 11.9998L3.41016 13.4098L9.00016 18.9998L21.0002 6.99984L19.5902 5.58984L9.00016 16.1698Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+  }
+  
+  .checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+  }
+  
+  .col-3 {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .col-3 > div:nth-child(1) {
+    width: 150%;
+  }
+  
+  button {
+    border: none;
+    margin-top: 64px;
+    display: flex;
+    width: 622px;
+    height: 51px;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #F67669;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF;
+  }
+  
+  button:hover {
+    background: #e74837;
+  }
+  
